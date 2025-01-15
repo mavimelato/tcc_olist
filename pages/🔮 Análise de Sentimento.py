@@ -7,8 +7,6 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title='Análise de Sentimento', page_icon='🔮')
-
 # Certifique-se de baixar os dados do NLTK, caso ainda não tenha feito
 nltk.download('stopwords')
 

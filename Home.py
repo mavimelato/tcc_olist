@@ -42,8 +42,7 @@ st.markdown("""
     
     O Data Schema do dataset organiza os dados de forma estruturada, permitindo uma análise fácil e intuitiva. Ele detalha as relações entre os diferentes conjuntos de dados, como a correspondência entre pedidos e itens do pedido, entre clientes e suas avaliações, entre vendedores e os produtos que venderam, etc. O schema fornece uma visão clara das tabelas, campos e como elas se conectam, facilitando a realização de consultas complexas e análises de dados.""")
 
-image = Image.open('https://github.com/mavimelato/tcc_olist/blob/master/assets/dataschema.png')
-st.image(image, caption='Data Schema')
+st.image('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/assets/dataschema.png', caption='Data Schema')
 
 st.markdown("""---""")
 

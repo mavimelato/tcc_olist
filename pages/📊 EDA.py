@@ -8,19 +8,17 @@ from PIL import Image
 
 sns.set_theme(style="whitegrid")
 
-st.set_page_config(page_title='📊 EDA', page_icon='📊')
-
-# Carregar os dados
-df = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/df_preprocessed.csv?raw=true')
-order_items = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_order_items_dataset.csv?raw=true')
-orders = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_orders_dataset.csv?raw=true')
-payments = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_order_payments_dataset.csv?raw=true')
-products = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_products_dataset.csv?raw=true')
-customers = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_customers_dataset.csv?raw=true')
-sellers = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_sellers_dataset.csv?raw=true')
-product_category = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/product_category_name_translation.csv?raw=true')
-geolocation = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_geolocation_dataset.csv?raw=true')
-reviews = pd.read_csv('https://github.com/mavimelato/tcc_olist/blob/master/data/olist_order_reviews_dataset.csv?raw=true')
+# Carregar os dados diretamente da URL com ?raw=true
+df = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/df_preprocessed.csv')
+order_items = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_order_items_dataset.csv')
+orders = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_orders_dataset.csv')
+payments = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_order_payments_dataset.csv')
+products = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_products_dataset.csv')
+customers = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_customers_dataset.csv')
+sellers = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_sellers_dataset.csv')
+product_category = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/product_category_name_translation.csv')
+geolocation = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_geolocation_dataset.csv')
+reviews = pd.read_csv('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/data/olist_order_reviews_dataset.csv')
 
 st.title('📊 Análise Exploratória de Dados')
 st.markdown("""

@@ -42,26 +42,8 @@ st.markdown("""
     
     O Data Schema do dataset organiza os dados de forma estruturada, permitindo uma análise fácil e intuitiva. Ele detalha as relações entre os diferentes conjuntos de dados, como a correspondência entre pedidos e itens do pedido, entre clientes e suas avaliações, entre vendedores e os produtos que venderam, etc. O schema fornece uma visão clara das tabelas, campos e como elas se conectam, facilitando a realização de consultas complexas e análises de dados.""")
 
-image = Image.open(r'C:/Users/Rubeus/Documents/tcc/assets/dataschema.png')
+image = Image.open('https://github.com/mavimelato/tcc_olist/blob/master/assets/dataschema.png')
 st.image(image, caption='Data Schema')
-
-st.markdown("""---""")
-
-st.markdown("""
-    
-    ### Resultados
-    
-    A metodologia adotada envolveu análise exploratória de dados, processamento de linguagem natural (NLP) e aprendizado de máquina. Foram analisados dados relacionados a pedidos, produtos, clientes e avaliações, com o objetivo de identificar padrões, como a relação entre o tempo de entrega e a satisfação do cliente. O processamento de linguagem natural foi utilizado para extrair sentimentos dos comentários dos clientes, enquanto modelos de aprendizado de máquina foram treinados com variáveis como tempo de entrega, avaliação do produto e sentimentos identificados.
-    
-    Os resultados obtidos demonstraram alta precisão, com métricas como F1-Score e AUC-ROC superiores a 90%, e indicaram que atrasos na entrega estão fortemente correlacionados a avaliações negativas. Esse achado evidencia a importância da logística para a satisfação do cliente e pode servir como base para aprimoramento das operações da Olist.
-    
-    Abaixo, é possível visualizar as matrizes de confusão e a curva ROC para uma análise mais detalhada do desempenho do modelo.""")
-
-image = Image.open(r'C:/Users/Rubeus/Documents/tcc/assets/curvas.png')
-st.image(image, caption='Curvas ROC')
-
-image = Image.open(r'C:/Users/Rubeus/Documents/tcc/assets/matriz.png')
-st.image(image, caption='Matrizes de confusão')
 
 st.markdown("""---""")
 

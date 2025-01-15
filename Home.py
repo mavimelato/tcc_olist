@@ -46,21 +46,14 @@ st.image('https://raw.githubusercontent.com/mavimelato/tcc_olist/master/assets/d
 
 st.markdown("""---""")
 
-st.markdown("""
-    
-    ### Navegação no Streamlit
-    
-    A aplicação foi dividida em três páginas principais para facilitar a navegação e a interação com os dados e modelos. Abaixo está a descrição de cada uma das páginas e suas funcionalidades:
-    
-    #### Home 
-    Na página Home, os usuários terão uma visão geral do projeto e das funcionalidades disponíveis. Aqui, será apresentada uma explicação sobre os objetivos do trabalho e a metodologia adotada. Além disso, o usuário poderá entender o processo de análise de dados, desde a exploração até a construção do modelo preditivo.     
-    
-    #### Análise Exploratória de Dados  
-    A página EDA (Análise Exploratória de Dados) será o espaço para explorar os insights obtidos dos datasets. Aqui, você encontrará todas as perguntas respondidas com os dados, junto com os gráficos e resultados que ilustram as conclusões da análise.     
-    
-    #### Predição da Satisfação
-    A página de Predição da Satisfação permitirá que os usuários insiram dados sobre um pedido (como informações de compra e entrega) para prever a satisfação do cliente com base nos modelos de Machine Learning construídos. O usuário poderá inserir informações como o tipo de pagamento, preço, tempo de entrega e outros dados relevantes, e o modelo fará uma previsão sobre a satisfação do cliente, classificando-a como "Positiva", "Negativa" ou "Neutra". Isso ajudará a demonstrar como o modelo pode ser aplicado para prever a experiência do cliente com base nos dados históricos.    
-    
-    """)
+st.markdown("### Navegação no Streamlit")
+
+st.info("""
+🏠 **Home**: Visão geral do projeto, incluindo seus objetivos, o contexto da plataforma Olist, e uma descrição resumida do dataset utilizado, que contém informações de pedidos, clientes, produtos, pagamentos, avaliações e outros dados relevantes.
+
+📊 **EDA**: Espaço para explorar os insights obtidos dos datasets, com perguntas respondidas, gráficos e resultados que ilustram as conclusões da análise.
+
+🤖 **Predição**: A página de Predição permite realizar a análise de sentimento das avaliações. Insira a avaliação, e o modelo classifica o sentimento como "Positivo", "Negativo" ou "Neutro", ajudando a entender melhor a experiência dos clientes com base nas opiniões expressas.
+""")
 
 st.markdown("""---""")

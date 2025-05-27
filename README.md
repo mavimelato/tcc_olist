@@ -1,5 +1,4 @@
 # Aplicação de Técnicas de Aprendizado de Máquina na Predição de Satisfação do Cliente para E-commerce
----
 
 ## Sobre o Negócio
 
@@ -14,7 +13,6 @@ A Olist enfrenta desafios em compreender as necessidades dos clientes e melhorar
 - Explorar a relação entre métricas de entrega, como tempo e custo de frete, e a satisfação dos clientes, considerando variações regionais e estaduais.
 - Investigar os fatores que influenciam a pontuação de avaliações dos clientes, como categoria de produto, tipo de pagamento e tempo de entrega, para entender as principais causas de satisfação e insatisfação.
 - Desenvolver um modelo preditivo para classificar a satisfação do cliente para prever a probabilidade de um cliente estar satisfeito ou insatisfeito.
----
 
 ## Resumo dos Dados
 
@@ -66,15 +64,11 @@ A Olist enfrenta desafios em compreender as necessidades dos clientes e melhorar
 
 </div>
 
----
 ## Metodologia
 
 O projeto seguiu uma abordagem estruturada que combinou Análise Exploratória de Dados (EDA), Processamento de Linguagem Natural (NLP) e Machine Learning. Inicialmente, foram analisados dados de pedidos, clientes, avaliações, pagamentos e entregas de um e-commerce para extrair padrões de comportamento e identificar fatores que influenciam a satisfação dos clientes. Em seguida, as avaliações textuais foram tratadas com técnicas de NLP e classificadas em sentimentos (positivo, negativo ou neutro) utilizando vetorização com TF-IDF e modelos como Random Forest, SVM e Logistic Regression.
 
 O modelo final foi integrado em uma aplicação com Streamlit, que permite a visualização dos insights da análise exploratória e a predição de sentimentos em tempo real com base em novos comentários inseridos pelo usuário.
-
----
-
 
 ## Principais Insights
 
@@ -97,7 +91,6 @@ O modelo final foi integrado em uma aplicação com Streamlit, que permite a vis
 #### 📈 Desempenho e Retenção
 
 - Estados com entregas mais rápidas (ex: SP, PR) têm avaliações mais altas. Onde o tempo é maior (ex: RR, AM), as notas caem. Melhorias logísticas e comunicação clara são essenciais.
----
 
 ## **Conclusões**
 
@@ -113,15 +106,12 @@ O modelo final foi integrado em uma aplicação com Streamlit, que permite a vis
 
 **6. Personalização de Ofertas:** Entender os padrões regionais e temporais de compra possibilita criar campanhas personalizadas que aumentem o engajamento do cliente e a eficiência das ações de marketing.
 
----
-
 ## **Aplicação para Predição de Satisfação**
 
 Para tornar os resultados acessíveis e interativos, foi desenvolvida uma aplicação em Streamlit que permite a predição do sentimento das avaliações dos clientes. Nela, o usuário pode inserir um texto de avaliação e obter instantaneamente a classificação do sentimento como “Positivo”, “Negativo” ou “Neutro”. A aplicação também oferece visualizações da análise exploratória dos dados.
 
 O link para acesso à aplicação está disponível [aqui](https://sentiment-analysis-olist.streamlit.app).
 
----
 ## Documentação Completa
 
 Toda a análise detalhada, metodologia e resultados estão documentados no arquivo **TCC_Olist** que acompanha o projeto. Este arquivo contém a documentação completa e serve como suporte para consultas e aprofundamentos.
